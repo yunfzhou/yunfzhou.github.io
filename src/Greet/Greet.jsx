@@ -12,7 +12,7 @@ export default class Greet extends Component {
       name: "yunfzhou@zju.edu.cn",
     };
     this.mygit = {
-      site: "https://github.com/zyfZD123",
+      site: "https://github.com/yunfzhou",
       name: "My Github"
     };
     this.mytwitter = {
