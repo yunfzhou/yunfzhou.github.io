@@ -1,0 +1,37 @@
+{
+  "people": {
+    "yfzhou": {
+      "site": "https://zyfzd123.github.io/",
+      "name": "Yunfan Zhou"
+    },
+    "ycwu": {
+      "site": "http://www.ycwu.org/",
+      "name": "Yingcai Wu"
+    },
+    "dweng": {
+      "site": "https://dwe.ng/",
+      "name": "Di Weng"
+    },
+    "hmqu": {
+      "site": "http://huamin.org/",
+      "name": "Huamin Qu"
+    },
+    "ywhuang": {
+      "site": "https://yhuang.top/",
+      "name": "Yanwei Huang"
+    },
+    "shliu": {
+      "site": "https://scholar.google.com/citations?user=ApD3iicAAAAJ&hl=en",
+      "name": "Shuhan Liu"
+    },
+    "rchen": {
+      "site": "https://crcrcry.notion.site/",
+      "name": "Ran Chen"
+    },
+    "xhshu": {
+      "site": "https://shuxinhuan.github.io/",
+      "name": "Xinhuan Shu"
+    }
+
+  }
+}

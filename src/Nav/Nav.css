@@ -1,0 +1,102 @@
+.nav {
+  display: block;
+  position: sticky; /* DO NOT SET "fixed"! Too many pitfalls! */
+  width: 100%;
+  height: 10vh;
+  top: 0; /* If you set position: sticky, you must set "top". Otherwise "sticky" will not take effect.*/
+}
+
+.nav-edge1 {
+  display: block;
+  width: 100%;
+  height: 10px;
+  background: var(--themeColor);
+}
+
+.nav-edge2 {
+  display: block;
+  width: 100%;
+  height: 10px;
+  background-color: rgb(217, 239, 255);
+}
+
+.nav-menu-wrapper {
+  display: flex;
+  justify-content: space-between; /* items will tend to be placed at both sides, far from the center */
+  align-items: flex-start; /* I don't know why it works */
+  width: 100%;
+  height: calc(100% - 20px);
+}
+
+.nav-myname-wrapper {
+  position: relative;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto; /* Do not grow or shrink */
+  height: 100%; /* Do not set width because we don't know the width of the text */
+  margin-left: 15vw;
+  font-size: 28px;
+  font-family: semibold;
+  white-space: nowrap; /* forbid wrapping my name by "&nbsp;" */
+}
+
+.nav-menu {
+  margin-right: 15vw;
+  min-width: 0; /* Must set this, so that the menu can collapse or extend */
+  flex: auto; /* Must set this, so that the menu can collapse or extend */
+  display: flex; /* Let each child flex */
+  justify-content: flex-end; /* right align */
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); /* position, top, transform: vertical middle */
+}
+
+/* Consider narrow screen (e.g. mobile phone) */
+@media screen and (max-width: 660px) {
+  .nav-myname-wrapper {
+    margin-left: 5vw;
+  }
+  .nav-menu {
+    margin-right: 5vw;
+  }
+}
+
+.nav-myname {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); /* position, top, transform: vertical middle */
+  color: var(--textColor);
+}
+
+
+
+.nav-menu-li{
+  /* margin-left: auto !important;
+  float: right; */
+  /* position: relative;
+  top: 50%;
+  transform: translateY(-50%); */
+  /* vertical-align: middle !important; */
+}
+
+.nav-menu-li > span{
+  color: var(--textColor);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* .ant-menu-title-content > span {
+  color: var(--textColor);
+  font-size: 16px;
+  font-weight: 600;
+} */
+
+:where(.css-dev-only-do-not-override-2i2tap).ant-menu-light.ant-menu-horizontal >.ant-menu-item-selected, :where(.css-dev-only-do-not-override-2i2tap).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-item-selected, :where(.css-dev-only-do-not-override-2i2tap).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-selected, :where(.css-dev-only-do-not-override-2i2tap).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-submenu-selected {
+  color: var(--textColor);
+  background-color: transparent;
+}
+
+:where(.css-dev-only-do-not-override-2i2tap).ant-menu-light.ant-menu-horizontal >.ant-menu-item-selected::after, :where(.css-dev-only-do-not-override-2i2tap).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-item-selected::after, :where(.css-dev-only-do-not-override-2i2tap).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-selected::after, :where(.css-dev-only-do-not-override-2i2tap).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-submenu-selected::after {
+  border-bottom-width: 2px;
+  border-bottom-color: var(--underlineColor);
+}

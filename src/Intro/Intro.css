@@ -1,0 +1,35 @@
+.intro-wrapper {
+  display: block;
+}
+
+.intro-text-wrapper {
+  font-size: 16px;
+}
+
+.intro-text-wrapper a {
+  display: inline-block;
+  position: relative;
+  color: var(--linkColor);
+  text-decoration-line: none;
+}
+
+.intro-text-wrapper a:hover {
+  color: var(--linkColor);
+}
+
+.intro-text-wrapper a:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background: #4285f4;
+  transition: all .3s;
+}
+
+.intro-text-wrapper a:hover:before {
+  width: 100%;
+  left: 0;
+  right: 0;
+}
