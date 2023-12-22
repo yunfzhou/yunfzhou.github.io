@@ -21,14 +21,7 @@ export default class App extends Component {
   }
 
   setCurrentItem(cur) {
-    const splitres = window.location.href.split("#");
-    if(splitres.length === 1) {
-      window.location.href = splitres[0] + `#${cur.toLowerCase()}`;
-    } else {
-      splitres.pop();
-      window.location.href = splitres.join("#") + `#${cur.toLowerCase()}`;
-    }
-    this.setState({currentItem: cur.toLowerCase()});
+    this.setState({currentItem: cur});
   }
 
   render() {
@@ -50,5 +43,30 @@ export default class App extends Component {
         }
       </>
     )
+  }
+
+  updateHref(cur) {
+    const splitres = window.location.href.split("#");
+    let newHref = "";
+
+    if(splitres.length <= 2) {
+      newHref = splitres[0] + ((cur === NAV_OPTION.ABOUT) ? `` : `#${cur}`);
+    } else {
+      throw Error("[updateHref] Error: invalid href.");
+    }
+
+    if(window.location.href !== newHref) { //avoid dead loop of refreshing
+      window.location.href = newHref;
+    }
+  }
+
+  componentDidMount() {
+    const cur = this.state.currentItem;
+    this.updateHref(cur);
+  }
+
+  componentDidUpdate() {
+    const cur = this.state.currentItem;
+    this.updateHref(cur);
   }
 }
