@@ -25,7 +25,7 @@ export default class Greet extends Component {
     return <div className="greet" id="about">
       <div className="postcard">
         <div className="postcard-text">
-          <span className="postcard-firstline">Nice to meet you! I'm Yunfan Zhou&nbsp;&nbsp;</span>
+          <span className="postcard-firstline">Nice to meet you! I'm <span className="h1-bg">Yunfan Zhou</span>&nbsp;&nbsp;</span>
           <span className="postcard-firstline-chinese">(周云帆)</span>
         </div>
         <div className="postcard-text">

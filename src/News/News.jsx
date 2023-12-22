@@ -20,8 +20,8 @@ export default class News extends Component {
       {
         time: "2023.10",
         content: Utils.createLinkedPara(
-          `Our paper \"${STRSEP}\"got accepted by TVCG!`, 
-          ["Interactive Table Synthesis with Natural Language", "https://doi.org/10.1109/TVCG.2023.3329120"]
+          `Our paper \"Interactive Table Synthesis with Natural Language\"got accepted by ${STRSEP}!`, 
+          ["TVCG", "https://doi.org/10.1109/TVCG.2023.3329120"]
         )
       },
       {
@@ -60,7 +60,6 @@ export default class News extends Component {
   listNews() {
     return this.state.news.map((v) => {
       const {time, content, renderID} = v;
-      console.log(time, content, renderID);
       return <Row key={renderID} gutter={[50, 25]} className="one-news">
         <Col flex="0 0 auto" className="one-news-time">{time}</Col>
         {this.listContent(content)}
@@ -70,7 +69,9 @@ export default class News extends Component {
 
   render() {
     return <div className="news">
-      <div className="news-title">{NAV_OPTION.NEWS}</div>
+      <div className="news-title">
+        <span className="h1-bg">{NAV_OPTION.NEWS}</span>
+      </div>
       <div className="news-list">
         {this.listNews()}
       </div>

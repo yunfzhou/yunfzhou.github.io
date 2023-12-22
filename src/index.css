@@ -21,6 +21,23 @@
   --fontSizeDefault: 16px;
 }
 
+.h1-bg {
+  position: relative;
+}
+
+.h1-bg::after {
+  content: "";
+  background-color: #DEF5FF;
+  display: block;
+  height: 45%;
+  position: absolute;
+  bottom: 0.2rem;
+  right: 0;
+  width: 100%;
+  z-index: -1;
+  border-radius: 30%;
+}
+
 body {
   margin: 0px;
   width: 100vw;
@@ -55,4 +72,32 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+a {
+  display: inline-block;
+  position: relative;
+  color: var(--linkColor);
+  text-decoration-line: none;
+}
+
+a:hover {
+  color: var(--linkColor);
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background: #4285f4;
+  transition: all .3s;
+}
+
+a:hover:before {
+  width: 100%;
+  left: 0;
+  right: 0;
 }

@@ -4,6 +4,7 @@
 
 .publication-title {
   display: block;
+  position: relative;
   font-family: semibold;
   font-size: 26px;
 }

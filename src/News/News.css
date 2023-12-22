@@ -1,5 +1,6 @@
 .news-title {
   display: block;
+  position: relative;
   font-family: semibold;
   font-size: 26px;
 }
@@ -10,7 +11,7 @@
 }
 
 .one-news {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   flex-wrap: nowrap;
 }
 
@@ -22,4 +23,9 @@
 
 .one-news-time {
   width: 110px;
+  font-size: 14px;
+}
+
+.one-news-content {
+  font-size: 16px;
 }

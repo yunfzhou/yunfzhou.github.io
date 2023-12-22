@@ -107,7 +107,9 @@ export default class Publication extends Component {
 
   render() {
     return <div className="publication" id="publication">
-      <div className="publication-title">{NAV_OPTION.PUBLICATION}</div>
+      <div className="publication-title">
+        <span className="h1-bg">{NAV_OPTION.PUBLICATION}</span>
+      </div>
       <div className="publication-paperlist">
         {this.state.papers.map(this.listPaper)}
       </div>
