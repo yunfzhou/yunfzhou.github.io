@@ -24,6 +24,7 @@
 
 .h1-bg {
   position: relative;
+  white-space: nowrap; /* cannot wrap because the it will be separated from :after */
 }
 
 .h1-bg::after {

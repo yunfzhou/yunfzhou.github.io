@@ -25,10 +25,16 @@ export default class Greet extends Component {
   render() {
     const rootId = NAV_OPTION.ABOUT;
     return <div className="greet" id={rootId}>
+      <div className="intro-image-wrapper">
+        <Avatar src="/aboutme/self.png" shape="circle" size={130} className="intro-image"></Avatar>
+      </div>
       <div className="postcard">
         <div className="postcard-text">
-          <span className="postcard-firstline">Nice to meet you! I'm <span className="h1-bg">Yunfan Zhou</span>&nbsp;&nbsp;</span>
-          <span className="postcard-firstline-chinese">(周云帆)</span>
+          <span className="postcard-firstline">
+            Nice to meet you! I'm <span className="h1-bg">Yunfan Zhou</span>
+          </span>
+          &nbsp;&nbsp;
+          (<span className="postcard-firstline-chinese">周云帆</span>)
         </div>
         <div className="postcard-text">
           <span className="postcard-secondline">CS Undergraduate @ Zhejiang University</span>
@@ -44,9 +50,6 @@ export default class Greet extends Component {
           <img src="/icons/twitter.svg" className="intro-contact-icon"
                onClick={Utils.clickCallBack(this.mytwitter.site)}/>
         </div>
-      </div>
-      <div className="intro-image-wrapper">
-        <Avatar src="/aboutme/self.png" shape="circle" size={130} className="intro-image"></Avatar>
       </div>
     </div>
   }
