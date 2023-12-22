@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {Row, Col} from "antd";
+import {Row, Col, Divider} from "antd";
 
 import PeopleJson from "../db/people.json";
 import institutesJson from "../db/institutes.json";
@@ -20,10 +20,16 @@ export default class News extends Component {
       {
         time: "2023.10",
         content: Utils.createLinkedPara(
-          `Our paper \"Interactive Table Synthesis with Natural Language\"got accepted by ${STRSEP}!`, 
+          `Our paper \"Interactive Table Synthesis with Natural Language\" got accepted by ${STRSEP}!`, 
           ["TVCG", "https://doi.org/10.1109/TVCG.2023.3329120"]
         )
       },
+      // {
+      //   time: "2023.09",
+      //   content: Utils.createLinkedPara(
+      //     ``
+      //   )
+      // },
       {
         time: "2023.09",
         content: Utils.createLinkedPara(
@@ -60,7 +66,9 @@ export default class News extends Component {
   listNews() {
     return this.state.news.map((v) => {
       const {time, content, renderID} = v;
-      return <Row key={renderID} gutter={[50, 25]} className="one-news">
+      const h_gutter = 50;
+      const v_gutter = 0;
+      return <Row key={renderID} gutter={[h_gutter, v_gutter]} className="one-news">
         <Col flex="0 0 auto" className="one-news-time">{time}</Col>
         {this.listContent(content)}
       </Row>
@@ -69,6 +77,7 @@ export default class News extends Component {
 
   render() {
     return <div className="news">
+      <Divider />
       <div className="news-title">
         <span className="h1-bg">{NAV_OPTION.NEWS}</span>
       </div>

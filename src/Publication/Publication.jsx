@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {Row, Col} from "antd";
+import {Row, Col, Divider} from "antd";
 
 import paperJson from "../db/papers.json";
 import peopleJson from "../db/people.json";
@@ -80,7 +80,9 @@ export default class Publication extends Component {
 
   listPaper(p) {
     if(this.state.listOp === LIST_OP.BY_DATE) {
-      return <Row key={p.renderID} gutter={[50, 25]} className="paper">
+      const h_gutter = 50;
+      const v_gutter = 0;
+      return <Row key={p.renderID} gutter={[h_gutter, v_gutter]} className="paper">
         <Col flex="0 0 auto" className="paper-img-wrapper">
           <img className="paper-img" src={this.teaserRootPath + p.teaserName} alt={p.teaserName} />
         </Col>
@@ -107,6 +109,7 @@ export default class Publication extends Component {
 
   render() {
     return <div className="publication" id="publication">
+      <Divider />
       <div className="publication-title">
         <span className="h1-bg">{NAV_OPTION.PUBLICATION}</span>
       </div>

@@ -1,13 +1,16 @@
 .copyright {
   display: block;
   width: 100%;
-  border-top: solid 1px #dddddd;
   font-size: 14px;
   color: #AAAAAA;
   text-align: center;
 }
 
-.copyright .dr:hover {
+.copyright-divider {
+  margin-bottom: 5px;
+}
+
+.copyright .prof:hover {
   position: relative;
   cursor: pointer;
   color: var(--linkColor);

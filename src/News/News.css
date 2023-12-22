@@ -1,8 +1,13 @@
+.news {
+  display: block;
+}
+
 .news-title {
   display: block;
   position: relative;
   font-family: semibold;
   font-size: 26px;
+  margin-bottom: 10px;
 }
 
 .news-list {
@@ -23,9 +28,15 @@
 
 .one-news-time {
   width: 110px;
-  font-size: 14px;
+  color: #8b8b8b;
+  font-size: var(--fontSizeDefault);
+  font-weight: var(--fontWeightDefault);
+  font-family: var(--fontDefault);
 }
 
 .one-news-content {
-  font-size: 16px;
+  color: var(--textColor);
+  font-size: var(--fontSizeDefault);
+  font-weight: var(--fontWeightDefault);
+  font-family: var(--fontDefault);
 }

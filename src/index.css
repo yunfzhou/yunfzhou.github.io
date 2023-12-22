@@ -18,6 +18,7 @@
   --textColor: #555555; /* text color default */
   --linkColor: #0094f7;
   --fontDefault: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --fontWeightDefault: 400;
   --fontSizeDefault: 16px;
 }
 
