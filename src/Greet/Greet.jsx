@@ -1,7 +1,8 @@
 import React, {Component} from "react";
-import {Avatar} from "antd";
+import { Avatar } from "antd";
 
 import Utils from "../utils.js";
+import { NAV_OPTION } from "../constants.js";
 import "./Greet.css";
 
 export default class Greet extends Component {
@@ -22,7 +23,8 @@ export default class Greet extends Component {
   }
 
   render() {
-    return <div className="greet" id="about">
+    const rootId = NAV_OPTION.ABOUT;
+    return <div className="greet" id={rootId}>
       <div className="postcard">
         <div className="postcard-text">
           <span className="postcard-firstline">Nice to meet you! I'm <span className="h1-bg">Yunfan Zhou</span>&nbsp;&nbsp;</span>

@@ -3,7 +3,7 @@ import {Row, Col, Divider} from "antd";
 
 import paperJson from "../db/papers.json";
 import peopleJson from "../db/people.json";
-import {NAV_OPTION, LIST_OP, ME} from "../constants.js";
+import {NAV_OPTION, LIST_OP, ME, NAV_OPTION_U} from "../constants.js";
 import Utils from "../utils.js";
 import "./Publication.css"
 
@@ -108,10 +108,11 @@ export default class Publication extends Component {
   }
 
   render() {
-    return <div className="publication" id="publication">
+    const rootId = NAV_OPTION.PUBLICATION;
+    return <div className="publication" id={rootId}>
       <Divider />
       <div className="publication-title">
-        <span className="h1-bg">{NAV_OPTION.PUBLICATION}</span>
+        <span className="h1-bg">{NAV_OPTION_U.PUBLICATION}</span>
       </div>
       <div className="publication-paperlist">
         {this.state.papers.map(this.listPaper)}

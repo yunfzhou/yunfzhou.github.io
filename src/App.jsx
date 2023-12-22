@@ -21,7 +21,14 @@ export default class App extends Component {
   }
 
   setCurrentItem(cur) {
-    this.setState({currentItem: cur});
+    const splitres = window.location.href.split("#");
+    if(splitres.length === 1) {
+      window.location.href = splitres[0] + `#${cur.toLowerCase()}`;
+    } else {
+      splitres.pop();
+      window.location.href = splitres.join("#") + `#${cur.toLowerCase()}`;
+    }
+    this.setState({currentItem: cur.toLowerCase()});
   }
 
   render() {

@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import { Menu, Anchor } from "antd";
 
-import { NAV_OPTION } from "../constants.js";
+import { NAV_OPTION, NAV_OPTION_U } from "../constants.js";
 import "./Nav.css"
 
 export default class Nav extends Component {
@@ -10,27 +10,18 @@ export default class Nav extends Component {
     this.state = {
       menuItem: [
         {
-          // label: <span>About</span>,
-          label: NAV_OPTION.ABOUT,
+          label: NAV_OPTION_U.ABOUT,
           key: NAV_OPTION.ABOUT,
-          // href: "#about",
-          // title: 'About',
           className: "nav-menu-li" //Maybe only set the first element's className it will work
         },
         {
-          // label: <span>Publication</span>,
-          label: NAV_OPTION.PUBLICATION,
+          label: NAV_OPTION_U.PUBLICATION,
           key: NAV_OPTION.PUBLICATION,
-          // href: "#publication",
-          // title: 'Publication',
           className: "nav-menu-li"
         },
         {
-          // label: <span>CV</span>,
-          label: NAV_OPTION.CV,
+          label: NAV_OPTION_U.CV,
           key: NAV_OPTION.CV,
-          // href: "#cv",
-          // title: 'CV',
           className: "nav-menu-li"
         },
       ]

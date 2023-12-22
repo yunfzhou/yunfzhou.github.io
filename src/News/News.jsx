@@ -3,7 +3,7 @@ import {Row, Col, Divider} from "antd";
 
 import PeopleJson from "../db/people.json";
 import institutesJson from "../db/institutes.json";
-import { STRSEP, NAV_OPTION } from "../constants.js";
+import { STRSEP, NAV_OPTION, NAV_OPTION_U } from "../constants.js";
 import Utils from "../utils.js";
 import "./News.css";
 
@@ -76,10 +76,11 @@ export default class News extends Component {
   }
 
   render() {
-    return <div className="news">
+    const rootId = NAV_OPTION.NEWS;
+    return <div className="news" id={rootId}>
       <Divider />
       <div className="news-title">
-        <span className="h1-bg">{NAV_OPTION.NEWS}</span>
+        <span className="h1-bg">{NAV_OPTION_U.NEWS}</span>
       </div>
       <div className="news-list">
         {this.listNews()}
