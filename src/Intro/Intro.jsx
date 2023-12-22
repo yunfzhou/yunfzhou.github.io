@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 
 import peopleJson from "../db/people.json";
+import institutesJson from "../db/institutes.json";
 import "./Intro.css"
 
 export default class Intro extends Component {
@@ -28,10 +29,7 @@ export default class Intro extends Component {
     };
     this.ycwu = peopleJson.people.ycwu;
     this.dweng = peopleJson.people.dweng;
-    this.vislab = {
-      site: "http://vis.cse.ust.hk/index.html",
-      name: "VisLab"
-    };
+    this.vislab = institutesJson.institutes.vislab;
     this.hmqu = peopleJson.people.hmqu;
     this.firstpaper = {
       site: "https://doi.org/10.19655/j.cnki.1005-4642.2023.03.002",

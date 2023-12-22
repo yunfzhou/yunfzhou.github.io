@@ -4,6 +4,7 @@ import { NAV_OPTION } from './constants.js';
 import Nav from './Nav/Nav.jsx';
 import Greet from './Greet/Greet.jsx';
 import Intro from './Intro/Intro.jsx';
+import News from './News/News.jsx';
 import Publication from "./Publication/Publication.jsx";
 import CV from './CV/CV.jsx';
 import CopyRight from './CopyRight/CopyRight.jsx';
@@ -32,6 +33,7 @@ export default class App extends Component {
           (<div className="main-container1">
             <Greet />
             <Intro />
+            <News />
             <Publication />
             <CopyRight />
           </div>) :

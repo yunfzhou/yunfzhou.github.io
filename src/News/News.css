@@ -1,0 +1,25 @@
+.news-title {
+  display: block;
+  font-family: semibold;
+  font-size: 26px;
+}
+
+.news-list {
+  display: block;
+  font-size: var(--fontSizeDefault);
+}
+
+.one-news {
+  margin-bottom: 20px;
+  flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 660px) {
+  .one-news {
+    flex-wrap: wrap;
+  }
+}
+
+.one-news-time {
+  width: 110px;
+}
