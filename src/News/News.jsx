@@ -8,41 +8,47 @@ import Utils from "../utils.js";
 import "./News.css";
 
 const { people } = PeopleJson;
-const { hmqu } = people;
+const { hmqu, ycwu, dweng } = people;
 
 const { institutes } = institutesJson;
-const { vislab } = institutes;
+const { vislab, zjuidg, hkust } = institutes;
 
 export default class News extends Component {
   constructor(props) {
     super(props);
     const news = [
-      {
-        time: "2023.10",
-        content: Utils.createLinkedPara(
-          `Our paper \"Interactive Table Synthesis with Natural Language\" got accepted by ${STRSEP}!`, 
-          ["TVCG", "https://doi.org/10.1109/TVCG.2023.3329120"]
-        )
-      },
-      // {
-      //   time: "2023.09",
-      //   content: Utils.createLinkedPara(
-      //     ``
-      //   )
-      // },
-      {
-        time: "2023.09",
-        content: Utils.createLinkedPara(
-          `I started my 5-month internship study under the supervision of Prof. ${STRSEP} in ${STRSEP}, Hong Kong University of Science and Technology (HKUST).`,
-          [hmqu.name, hmqu.site],
-          [vislab.name, vislab.site]
-        )
-      }
+      this.createANews("2023.11", "I was awarded Scholarship of Zhejiang University for the third time!"),
+      this.createANews("2023.10", 
+        `Our paper \"Interactive Table Synthesis with Natural Language\" got accepted by ${STRSEP}!`,
+        ["TVCG", "https://doi.org/10.1109/TVCG.2023.3329120"]
+      ),
+      this.createANews("2023.09",
+        `I passed the interview of PhD application for ${STRSEP}! I became a \"year-zero\" PhD student supervised by Prof. ${STRSEP} and Prof. ${STRSEP}.`,
+        [zjuidg.name, zjuidg.site],
+        [ycwu.name, ycwu.site],
+        [dweng.name, dweng.site]
+      ),
+      this.createANews("2023.09",
+        `I started my five-month internship study under the supervision of Prof. ${STRSEP} in ${STRSEP}, Hong Kong University of Science and Technology (${STRSEP}).`,
+        [hmqu.name, hmqu.site],
+        [vislab.name, vislab.site],
+        [hkust.name, hkust.site]
+      ),
+      this.createANews("2022.11", `I was awarded Scholarship of Zhejiang Provincial Government for the second time!`),
+      this.createANews("2022.08",
+        `I started my internship study in ${STRSEP}, supervised by Prof. ${STRSEP}.`,
+        [zjuidg.name, zjuidg.site],
+        [ycwu.name, ycwu.site]
+      ),
     ];
     this.addKey(news);
     this.state = {
       news,
     };
+  }
+
+  createANews(time, text, ...links) {
+    return {time, content: Utils.createLinkedPara(text, ...links)};
   }
 
   addKey(list) {

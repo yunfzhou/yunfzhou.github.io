@@ -11,32 +11,24 @@ export default class Intro extends Component {
     //   site: "http://ckc.zju.edu.cn/ckcen/2022/0225/c44633a2500659/page.htm",
     //   name: "The Mixed Class",
     // };
-    this.ckc = {
-      site: "http://ckc.zju.edu.cn/ckcen/wbout/list.htm",
-      name: "CKC"
-    };
-    this.cs = {
-      site: "http://www.en.cs.zju.edu.cn/",
-      name: "College of Computer Science and Technology"
-    }
-    this.zju = {
-      site: "https://www.zju.edu.cn/english/",
-      name: "ZJU"
-    };
-    this.zjuidg = {
-      site: "https://zjuidg.org/",
-      name: "ZJUIDG",
-    };
+    
+    this.hmqu = peopleJson.people.hmqu;
     this.ycwu = peopleJson.people.ycwu;
     this.dweng = peopleJson.people.dweng;
+    this.ywhuang = peopleJson.people.ywhuang;
+    this.shliu = peopleJson.people.shliu;
+
+    this.zju = institutesJson.institutes.zju;
+    this.ckc = institutesJson.institutes.ckc;
+    this.cst = institutesJson.institutes.cst;
+    this.zjuidg = institutesJson.institutes.zjuidg;
     this.vislab = institutesJson.institutes.vislab;
-    this.hmqu = peopleJson.people.hmqu;
+    this.hkust = institutesJson.institutes.hkust;
+    
     this.firstpaper = {
       site: "https://doi.org/10.19655/j.cnki.1005-4642.2023.03.002",
       name: "paper"
     };
-    this.ywhuang = peopleJson.people.ywhuang;
-    this.shliu = peopleJson.people.shliu;
   }
 
   render() {
@@ -45,11 +37,11 @@ export default class Intro extends Component {
         <p>
         Welcome to visit my site!
 
-        I'm currently a final-year undergraduate student in {this.cs.name}, and Chu Kochen Honors College (<a href={this.ckc.site}>{this.ckc.name}</a>) in Zhejiang University (<a href={this.zju.site}>{this.zju.name}</a>).
+        I'm currently a final-year undergraduate student in College of Computer Science and Technology (<a href={this.cst.site}>{this.cst.name}</a>), and Chu Kochen Honors College (<a href={this.ckc.site}>{this.ckc.name}</a>) in Zhejiang University (<a href={this.zju.site}>{this.zju.name}</a>).
         
         I'm an incoming PhD student in Interactive Data Group, Zhejiang University (<a href={this.zjuidg.site}>{this.zjuidg.name}</a>) in 2024 fall, under the joint supervision of Prof. <a href={this.ycwu.site}>{this.ycwu.name}</a> and Prof. <a href={this.dweng.site}>{this.dweng.name}</a>.
         
-        I'm now also a visiting internship student in <a href={this.vislab.site}>{this.vislab.name}</a>, Hong Kong University of Science and Technology (HKUST), supervised by Prof. <a href={this.hmqu.site}>{this.hmqu.name}</a>.
+        I'm now also a visiting internship student in <a href={this.vislab.site}>{this.vislab.name}</a>, Hong Kong University of Science and Technology (<a href={this.hkust.site}>{this.hkust.name}</a>), supervised by Prof. <a href={this.hmqu.site}>{this.hmqu.name}</a>.
         </p>
         <p>
         During the last year I was fortunate to have opportunities of internship study in ZJUIDG and worked closely with <a href={this.shliu.site}>{this.shliu.name}</a> and <a href={this.ywhuang.site}>{this.ywhuang.name}</a>, supervised by Prof. {this.ycwu.name}.

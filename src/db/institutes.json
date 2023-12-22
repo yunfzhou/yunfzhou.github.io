@@ -1,8 +1,28 @@
 {
   "institutes": {
+    "cst": {
+      "site": "http://www.en.cs.zju.edu.cn/",
+      "name": "CST"
+    },
+    "ckc": {
+      "site": "http://ckc.zju.edu.cn/ckcen/wbout/list.htm",
+      "name": "CKC"
+    },
+    "zju": {
+      "site": "https://www.zju.edu.cn/english/",
+      "name": "ZJU"
+    },
     "vislab": {
       "site": "http://vis.cse.ust.hk/index.html",
       "name": "VisLab"
+    },
+    "zjuidg": {
+      "site": "https://zjuidg.org/",
+      "name": "ZJUIDG"
+    },
+    "hkust": {
+      "site": "https://hkust.edu.hk/",
+      "name": "HKUST"
     }
   }
 }
