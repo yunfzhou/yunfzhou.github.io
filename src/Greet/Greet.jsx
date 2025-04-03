@@ -9,8 +9,8 @@ export default class Greet extends Component {
   constructor(props) {
     super(props);
     this.myemail = {
-      site: "mailto:yunfzhou@zju.edu.cn",
-      name: "yunfzhou@zju.edu.cn",
+      site: "mailto:yf.zhou@zju.edu.cn",
+      name: "yf.zhou@zju.edu.cn",
     };
     this.mygit = {
       site: "https://github.com/yunfzhou",

@@ -15,6 +15,7 @@ export default class Intro extends Component {
     this.hmqu = peopleJson.people.hmqu;
     this.ycwu = peopleJson.people.ycwu;
     this.dweng = peopleJson.people.dweng;
+    this.xwcai = peopleJson.people.xwcai;
     this.ywhuang = peopleJson.people.ywhuang;
     this.shliu = peopleJson.people.shliu;
     this.htli = peopleJson.people.htli;
@@ -71,7 +72,7 @@ export default class Intro extends Component {
 
         There, I met many friends and collaborated with Dr. <a href={this.htli.site}>{this.htli.name}</a> to complete my first submission.
 
-        I also worked closely with Xiwen Cai, <a href={this.shliu.site}>{this.shliu.name}</a>, <a href={this.ywhuang.site}>{this.ywhuang.name}</a> and other exceptional colleagues in ZJUIDG.
+        I also worked closely with <a href={this.xwcai.site}>{this.xwcai.name}</a>, <a href={this.shliu.site}>{this.shliu.name}</a>, <a href={this.ywhuang.site}>{this.ywhuang.name}</a> and other exceptional colleagues in ZJUIDG.
 
         Now my research interest is data visualization and interactive data wrangling.
         </p>
