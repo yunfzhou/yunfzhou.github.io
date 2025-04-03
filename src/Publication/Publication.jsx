@@ -78,6 +78,15 @@ export default class Publication extends Component {
     </div>
   }
 
+  showCodeLink(link) {
+    if(!link) return null;
+    return <div className="paper-link" onClick={Utils.clickCallBack(link)}>
+      <span>{"[ "}</span>
+      <img src="/icons/codeLink.svg" className="useful-link-icon"/>
+      <span>{"Code ]"}</span>
+    </div>
+  }
+
   listPaper(p) {
     if(this.state.listOp === LIST_OP.BY_DATE) {
       const h_gutter = 50;
@@ -99,6 +108,7 @@ export default class Publication extends Component {
           </div>
           <div className="useful-links">
             {this.showPaperLink(p.paperLink)}
+            {this.showCodeLink(p.codeLink)}
           </div>
         </Col>
       </Row>

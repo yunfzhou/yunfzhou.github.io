@@ -1,6 +1,24 @@
 {
   "papers": [
     {
+      "documentTitle": "Xavier: Toward Better Coding Assistance in Authoring Tabular Data Wrangling Scripts",
+      "authorID": [
+        "yfzhou",
+        "Xiwen Cai",
+        "Qiming Shi",
+        "ywhuang",
+        "htli",
+        "hmqu",
+        "dweng",
+        "ycwu"
+      ],
+      "publicationTitle": "Proceedings of the CHI Conference on Human Factors in Computing Systems",
+      "year": 2025,
+      "teaserName": "Xavier.png",
+      "paperLink": "https://arxiv.org/abs/2503.02639",
+      "codeLink": "https://github.com/CHI25-Xavier/Xavier"
+    },
+    {
       "documentTitle": "Interactive Table Synthesis with Natural Language",
       "authorID": [
         "ywhuang",
@@ -15,20 +33,6 @@
       "year": 2023,
       "teaserName": "NL2Rigel.png",
       "paperLink": "https://doi.org/10.1109/TVCG.2023.3329120"
-    },
-    {
-      "documentTitle": "Data Collection by Convolutional Neural Network to Extend the Vacuum Teaching Experiment",
-      "authorID": [
-        "Bo Peng",
-        "Shanggeng Du",
-        "yfzhou",
-        "Yuan Zheng",
-        "Yewu Wang"
-      ],
-      "publicationTitle": "Physics Experimentation",
-      "year": 2023,
-      "teaserName": "DataCollectionVacuum.png",
-      "paperLink": "https://kns.cnki.net/kcms2/article/abstract?v=3uoqIhG8C44YLTlOAiTRKibYlV5Vjs7ioT0BO4yQ4m_mOgeS2ml3UM2peZkYRQfpBGwQpV3k9-LA4a8EJl4Y-lvnCWw2UU7C&uniplatform=NZKPT"
     }
   ]
 }

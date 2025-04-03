@@ -17,10 +17,12 @@ export default class News extends Component {
   constructor(props) {
     super(props);
     const news = [
-      this.createANews("2023.11", "I was awarded Scholarship of Zhejiang University for the third time!"),
+      this.createANews("2025.01", `Our paper \"Xavier: Toward Better Coding Assistance in Authoring Tabular Data Wrangling Scripts\" got accepted by ACM CHI 2025! Many thanks to my coauthors!`),
+      this.createANews("2024.06", `I graduated from Zhejiang University (B. Eng. Computer Science)!`),
+      // this.createANews("2023.11", "I was awarded Scholarship of Zhejiang University for the third time!"),
       this.createANews("2023.10", 
         `Our paper \"Interactive Table Synthesis with Natural Language\" got accepted by ${STRSEP}!`,
-        ["TVCG", "https://doi.org/10.1109/TVCG.2023.3329120"]
+        ["IEEE TVCG", "https://doi.org/10.1109/TVCG.2023.3329120"]
       ),
       this.createANews("2023.09",
         `I passed the interview of PhD application for ${STRSEP}! I became a \"year-zero\" PhD student supervised by Prof. ${STRSEP} and Prof. ${STRSEP}.`,
@@ -34,7 +36,7 @@ export default class News extends Component {
         [vislab.name, vislab.site],
         [hkust.name, hkust.site]
       ),
-      this.createANews("2022.11", `I was awarded Scholarship of Zhejiang Provincial Government for the second time!`),
+      // this.createANews("2022.11", `I was awarded Scholarship of Zhejiang Provincial Government for the second time!`),
       this.createANews("2022.08",
         `I started my internship study in ${STRSEP}, supervised by Prof. ${STRSEP}.`,
         [zjuidg.name, zjuidg.site],

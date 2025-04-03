@@ -14,8 +14,8 @@ export default class CopyRight extends Component {
   render() {
     return <div className="copyright">
       <Divider className="copyright-divider" />
-      <div>This theme was inspired by Prof. <span onClick={Utils.clickCallBack(this.xhshu.site)} className="prof">{this.xhshu.name}</span>. Last modified: 22nd Dec 2023.</div>
-      <div>CopyRight © 2023 Yunfan Zhou. All Rights reserved.</div>
+      <div>This theme was inspired by Prof. <span onClick={Utils.clickCallBack(this.xhshu.site)} className="prof">{this.xhshu.name}</span>. Last modified: 2nd April 2025.</div>
+      <div>CopyRight © 2025 Yunfan Zhou. All Rights reserved.</div>
     </div>
   }
 }

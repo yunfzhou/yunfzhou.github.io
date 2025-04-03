@@ -74,6 +74,8 @@
 .useful-link-icon {
   width: auto;
   height: 1em;
+  vertical-align: -2px;
+  margin-right: 2px;
 }
 
 .author-me {

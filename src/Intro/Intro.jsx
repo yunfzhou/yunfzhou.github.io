@@ -17,6 +17,7 @@ export default class Intro extends Component {
     this.dweng = peopleJson.people.dweng;
     this.ywhuang = peopleJson.people.ywhuang;
     this.shliu = peopleJson.people.shliu;
+    this.htli = peopleJson.people.htli;
 
     this.zju = institutesJson.institutes.zju;
     this.ckc = institutesJson.institutes.ckc;
@@ -31,8 +32,8 @@ export default class Intro extends Component {
     };
   }
 
-  render() {
-    return <div className="intro-wrapper">
+  introV20231222() {
+    return (
       <div className="intro-text-wrapper">
         <p>
         Welcome to visit my site!
@@ -52,6 +53,35 @@ export default class Intro extends Component {
         Now my research interest is data visualization and interactive data wrangling.
         </p>
       </div>
+    );
+  }
+
+  introV20250402() {
+    return (
+      <div className="intro-text-wrapper">
+        <p>
+        Welcome to visit my site!
+
+        I'm currently a first-year PhD student in Interactive Data Group (<a href={this.zjuidg.site}>{this.zjuidg.name}</a>), Zhejiang University (<a href={this.zju.site}>{this.zju.name}</a>), under the joint supervision of Prof. <a href={this.ycwu.site}>{this.ycwu.name}</a> and Prof. <a href={this.dweng.site}>{this.dweng.name}</a>.
+
+        Before that, I received my bachelor's degree in Computer Science and Technology in 2024.
+        </p>
+        <p>
+        Previously, I was fortunate to have opportunities of internship study in <a href={this.vislab.site}>{this.vislab.name}</a>, Hong Kong University of Science and Technology (<a href={this.hkust.site}>{this.hkust.name}</a>), supervised by Prof. <a href={this.hmqu.site}>{this.hmqu.name}</a>.
+
+        There, I met many friends and collaborated with Dr. <a href={this.htli.site}>{this.htli.name}</a> to complete my first submission.
+
+        I also worked closely with Xiwen Cai, <a href={this.shliu.site}>{this.shliu.name}</a>, <a href={this.ywhuang.site}>{this.ywhuang.name}</a> and other exceptional colleagues in ZJUIDG.
+
+        Now my research interest is data visualization and interactive data wrangling.
+        </p>
+      </div>
+    );
+  }
+
+  render() {
+    return <div className="intro-wrapper">
+      {this.introV20250402()}
     </div>
   }
 }

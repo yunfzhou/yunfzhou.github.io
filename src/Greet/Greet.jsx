@@ -37,7 +37,7 @@ export default class Greet extends Component {
           (<span className="postcard-firstline-chinese">周云帆</span>)
         </div>
         <div className="postcard-text">
-          <span className="postcard-secondline">CS Undergraduate @ Zhejiang University</span>
+          <span className="postcard-secondline">CS PhD Student @ Zhejiang University</span>
         </div>
         <div className="postcard-text">
           <span className="postcard-thirdline">Data Visualization | Human-Computer Interaction | Data Wrangling</span>
