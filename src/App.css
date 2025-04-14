@@ -5,6 +5,7 @@
   height: 100%;
   overflow: auto;
   background-color: white;
+  color: var(--textColor); /* The default color */
 }
 
 .main-container1 {
