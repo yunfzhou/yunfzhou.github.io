@@ -15,8 +15,13 @@
       "publicationTitle": "Proceedings of the CHI Conference on Human Factors in Computing Systems",
       "year": 2025,
       "teaserName": "Xavier.png",
-      "paperLink": "https://arxiv.org/abs/2503.02639",
-      "codeLink": "https://github.com/CHI25-Xavier/Xavier"
+      "pubLink": {
+        "type": "ACM",
+        "link": "https://dl.acm.org/doi/10.1145/3706598.3714239"
+      },
+      "preprintLink": "https://arxiv.org/abs/2503.02639",
+      "codeLink": "https://github.com/CHI25-Xavier/Xavier",
+      "demoLink": "https://youtu.be/KTnCHSv1heI?feature=shared"
     },
     {
       "documentTitle": "Interactive Table Synthesis with Natural Language",
@@ -32,7 +37,11 @@
       "publicationTitle": "IEEE Transactions on Visualization and Computer Graphics",
       "year": 2023,
       "teaserName": "NL2Rigel.png",
-      "paperLink": "https://doi.org/10.1109/TVCG.2023.3329120"
+      "pubLink": {
+        "type": "IEEE",
+        "link": "https://doi.org/10.1109/TVCG.2023.3329120"
+      },
+      "demoLink": "https://youtu.be/qjjKAykyDZU?feature=shared"
     }
   ]
 }

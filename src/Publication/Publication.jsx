@@ -69,12 +69,23 @@ export default class Publication extends Component {
     }
   }
 
-  showPaperLink(link) {
+  showPubLink(link) {
+    if(!link) return null;
+    const linkType = link.type == "IEEE" ? "IEEE Xplore" : "ACM" ? "ACM Library" : "Paper";
+    const linkTypeShow = linkType + " ]";
+    return <div className="paper-link" onClick={Utils.clickCallBack(link.link)}>
+      <span>{"[ "}</span>
+      <img src="/icons/pubLink.svg" className="useful-link-icon"/>
+      <span>{linkTypeShow}</span>
+    </div>
+  }
+
+  showPreprintLink(link) {
     if(!link) return null;
     return <div className="paper-link" onClick={Utils.clickCallBack(link)}>
       <span>{"[ "}</span>
-      <img src="/icons/paperLink.svg" className="useful-link-icon"/>
-      <span>{"Paper ]"}</span>
+      <img src="/icons/preprintLink.svg" className="useful-link-icon"/>
+      <span>{"Preprint ]"}</span>
     </div>
   }
 
@@ -87,6 +98,15 @@ export default class Publication extends Component {
     </div>
   }
 
+  showDemoLink(link) {
+    if(!link) return null;
+    return <div className="paper-link" onClick={Utils.clickCallBack(link)}>
+      <span>{"[ "}</span>
+      <img src="/icons/demoLink.svg" className="useful-link-icon"/>
+      <span>{"Demo ]"}</span>
+    </div>
+  }
+
   listPaper(p) {
     if(this.state.listOp === LIST_OP.BY_DATE) {
       const h_gutter = 50;
@@ -96,7 +116,7 @@ export default class Publication extends Component {
           <img className="paper-img" src={this.teaserRootPath + p.teaserName} alt={p.teaserName} />
         </Col>
         <Col flex="1 1 auto" className="paper-info-wrapper">
-          <div className="paper-title">
+          <div className="paper-title" onClick={Utils.clickCallBack(p.pubLink.link)}>
             {p.documentTitle}
           </div>
           <div className="paper-author-list">
@@ -107,8 +127,10 @@ export default class Publication extends Component {
             <span>{p.year}</span>
           </div>
           <div className="useful-links">
-            {this.showPaperLink(p.paperLink)}
+            {this.showPubLink(p.pubLink)}
+            {this.showPreprintLink(p.preprintLink)}
             {this.showCodeLink(p.codeLink)}
+            {this.showDemoLink(p.demoLink)}
           </div>
         </Col>
       </Row>

@@ -13,10 +13,10 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --themeColor: rgb(52, 85, 139); /* theme color default */
+  --themeColor: #4570b5; /* theme color default */
   --underlineColor: #8ed1ff;
   --textColor: #555555; /* text color default */
-  --linkColor: #0094f7;
+  --linkColor: #4c8fff;
   --fontDefault: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   --fontWeightDefault: 400;
   --fontSizeDefault: 16px;
@@ -30,7 +30,7 @@
 
 .h1-bg::after {
   content: "";
-  background-color: #DEF5FF;
+  background-color: #32b1ff63;
   display: block;
   height: 45%;
   position: absolute;

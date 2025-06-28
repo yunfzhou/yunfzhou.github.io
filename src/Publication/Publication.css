@@ -45,7 +45,12 @@
   font-size: 18px;
   font-family: var(--fontDefault);
   font-weight: 600;
-  color: #777777;
+  color: #486fb0;
+}
+
+.paper-title:hover {
+  cursor: pointer;
+  color: var(--linkColor);
 }
 
 .paper-author-list span{
@@ -57,10 +62,6 @@
   font-family: var(--fontDefault);
   font-weight: 300;
 }
-
-/* .useful-links {
-
-} */
 
 .paper-link {
   display: inline-block;
