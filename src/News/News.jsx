@@ -17,9 +17,14 @@ export default class News extends Component {
   constructor(props) {
     super(props);
     const news = [
-      this.createANews("2025.01", `Our paper \"Xavier: Toward Better Coding Assistance in Authoring Tabular Data Wrangling Scripts\" got accepted by ACM CHI 2025! Many thanks to my coauthors!`),
-      this.createANews("2024.06", `I graduated from Zhejiang University (B. Eng. Computer Science)!`),
-      // this.createANews("2023.11", "I was awarded Scholarship of Zhejiang University for the third time!"),
+      this.createANews("2025.06", `We have released Xavier on ${STRSEP} and ${STRSEP}!`,
+        ["GitHub", "https://github.com/CHI25-Xavier/Xavier"],
+        ["PyPI", "https://pypi.org/project/idgxavier/"]
+      ),
+      this.createANews("2025.04", `I presented my paper \"Xavier: Toward Better Coding Assistance in Authoring Tabular Data Wrangling Scripts\" at ${STRSEP}!`,
+        ["ACM CHI 2025", "https://programs.sigchi.org/chi/2025/program/content/188471"]
+      ),
+      this.createANews("2024.06", `I graduated from Zhejiang University (B.Eng. in Computer Science and Technology)!`),
       this.createANews("2023.10", 
         `Our paper \"Interactive Table Synthesis with Natural Language\" got accepted by ${STRSEP}!`,
         ["IEEE TVCG", "https://doi.org/10.1109/TVCG.2023.3329120"]
