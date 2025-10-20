@@ -63,7 +63,7 @@ export default class Intro extends Component {
         <p>
         Welcome to visit my site!
 
-        I'm currently a first-year PhD student in Interactive Data Group (<a href={this.zjuidg.site}>{this.zjuidg.name}</a>), Zhejiang University (<a href={this.zju.site}>{this.zju.name}</a>), under the joint supervision of Prof. <a href={this.ycwu.site}>{this.ycwu.name}</a> and Prof. <a href={this.dweng.site}>{this.dweng.name}</a>.
+        I'm currently a second-year PhD student in Interactive Data Group (<a href={this.zjuidg.site}>{this.zjuidg.name}</a>), Zhejiang University (<a href={this.zju.site}>{this.zju.name}</a>), under the joint supervision of Prof. <a href={this.ycwu.site}>{this.ycwu.name}</a> and Prof. <a href={this.dweng.site}>{this.dweng.name}</a>.
 
         Before that, I received my bachelor's degree in Computer Science and Technology in 2024.
         </p>
