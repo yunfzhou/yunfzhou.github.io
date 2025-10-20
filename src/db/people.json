@@ -1,13 +1,5 @@
 {
   "people": {
-    "yfzhou": {
-      "site": "https://yunfzhou.github.io/",
-      "name": "Yunfan Zhou"
-    },
-    "ycwu": {
-      "site": "http://www.ycwu.org/",
-      "name": "Yingcai Wu"
-    },
     "dweng": {
       "site": "https://dwe.ng/",
       "name": "Di Weng"
@@ -16,29 +8,45 @@
       "site": "http://huamin.org/",
       "name": "Huamin Qu"
     },
-    "ywhuang": {
-      "site": "https://yhuang.top/",
-      "name": "Yanwei Huang"
+    "htli": {
+      "site": "https://haotian-li.com/",
+      "name": "Haotian Li"
     },
-    "shliu": {
-      "site": "https://scholar.google.com/citations?user=ApD3iicAAAAJ&hl=en",
-      "name": "Shuhan Liu"
+    "jjzhu": {
+      "site": "https://jiajunzhuchris.github.io/",
+      "name": "Jiajun Zhu"
     },
     "rchen": {
       "site": "https://crcrcry.notion.site/",
       "name": "Ran Chen"
     },
+    "shliu": {
+      "site": "https://scholar.google.com/citations?user=ApD3iicAAAAJ&hl=en",
+      "name": "Shuhan Liu"
+    },
     "xhshu": {
       "site": "https://shuxinhuan.github.io/",
       "name": "Xinhuan Shu"
     },
-    "htli": {
-      "site": "https://haotian-li.com/",
-      "name": "Haotian Li"
-    },
     "xwcai": {
       "site": "https://scholar.google.com/citations?user=Z-CUrSkAAAAJ&hl=en",
       "name": "Xiwen Cai"
+    },
+    "ycwu": {
+      "site": "http://www.ycwu.org/",
+      "name": "Yingcai Wu"
+    },
+    "yfzhou": {
+      "site": "https://yunfzhou.github.io/",
+      "name": "Yunfan Zhou"
+    },
+    "ywhuang": {
+      "site": "https://yhuang.top/",
+      "name": "Yanwei Huang"
+    },
+    "zsluo": {
+      "site": "https://maple-possum-c4d.notion.site/Zhongsu-LUO-9a76b04931a848179b6f8488033b3a2a",
+      "name": "Zhongsu Luo"
     }
   }
 }

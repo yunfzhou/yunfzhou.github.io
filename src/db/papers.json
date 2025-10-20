@@ -1,6 +1,27 @@
 {
   "papers": [
     {
+      "documentTitle": "ViseGPT: Towards Better Alignment of LLM-generated Data Wrangling Scripts and User Prompts",
+      "authorID": [
+        "jjzhu",
+        "Xinyu Cheng",
+        "zsluo",
+        "yfzhou",
+        "xhshu",
+        "dweng",
+        "ycwu"
+      ],
+      "publicationTitle": "Proceedings of the Annual ACM Symposium on User Interface Software and Technology",
+      "year": 2025,
+      "teaserName": "ViseGPT.png",
+      "pubLink": {
+        "type": "ACM",
+        "link": "https://doi.org/10.1145/3746059.3747689"
+      },
+      "preprintLink": "https://arxiv.org/abs/2508.01279",
+      "demoLink": "https://youtu.be/53WZFvEQUPQ?si=eaN3nDJjUJ2OK1S5"
+    },
+    {
       "documentTitle": "Xavier: Toward Better Coding Assistance in Authoring Tabular Data Wrangling Scripts",
       "authorID": [
         "yfzhou",
