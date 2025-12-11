@@ -111,12 +111,14 @@ export default class Publication extends Component {
     if(this.state.listOp === LIST_OP.BY_DATE) {
       const h_gutter = 50;
       const v_gutter = 0;
+      const main_link = p.pubLink ? p.pubLink.link : p.preprintLink
+      
       return <Row key={p.renderID} gutter={[h_gutter, v_gutter]} className="paper">
         <Col flex="0 0 auto" className="paper-img-wrapper">
           <img className="paper-img" src={this.teaserRootPath + p.teaserName} alt={p.teaserName} />
         </Col>
         <Col flex="1 1 auto" className="paper-info-wrapper">
-          <div className="paper-title" onClick={Utils.clickCallBack(p.pubLink.link)}>
+          <div className="paper-title" onClick={Utils.clickCallBack(main_link)}>
             {p.documentTitle}
           </div>
           <div className="paper-author-list">

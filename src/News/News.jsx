@@ -17,6 +17,9 @@ export default class News extends Component {
   constructor(props) {
     super(props);
     const news = [
+      this.createANews("2025.12", `Our paper "RCInvestigator: Towards Better Investigation of Anomaly Root Causes in Cloud Computing Systems" has been accepted by ${STRSEP}!`,
+        ["PacificVis 2026 (TVCG Journal Paper Track)", "https://www.pvismirror.org/TVCG-journal-papers.html"],
+      ),
       this.createANews("2025.07", `Our paper "ViseGPT: Towards Better Alignment of LLM-generated Data Wrangling Scripts and User Prompts" has been accepted by ${STRSEP}!`,
         ["ACM UIST 2025", "https://doi.org/10.1145/3746059.3747689"],
       ),
@@ -24,14 +27,14 @@ export default class News extends Component {
         ["GitHub", "https://github.com/CHI25-Xavier/Xavier"],
         ["PyPI", "https://pypi.org/project/idgxavier/"]
       ),
-      this.createANews("2025.04", `I presented my paper "Xavier: Toward Better Coding Assistance in Authoring Tabular Data Wrangling Scripts" at ${STRSEP}!`,
+      this.createANews("2025.04", `I presented my paper "Xavier: Toward Better Coding Assistance in Authoring Tabular Data Wrangling Scripts" at ${STRSEP}.`,
         ["ACM CHI 2025", "https://programs.sigchi.org/chi/2025/program/content/188471"]
       ),
       this.createANews("2024.06", `I graduated from Zhejiang University (B.Eng. in Computer Science and Technology)!`),
-      this.createANews("2023.10", 
-        `Our paper "Interactive Table Synthesis with Natural Language" got accepted by ${STRSEP}!`,
-        ["IEEE TVCG", "https://doi.org/10.1109/TVCG.2023.3329120"]
-      ),
+      // this.createANews("2023.10", 
+      //   `Our paper "Interactive Table Synthesis with Natural Language" got accepted by ${STRSEP}!`,
+      //   ["IEEE TVCG", "https://doi.org/10.1109/TVCG.2023.3329120"]
+      // ),
       // this.createANews("2023.09",
       //   `I passed the interview of PhD application for ${STRSEP}! I became a "year-zero" PhD student supervised by Prof. ${STRSEP} and Prof. ${STRSEP}.`,
       //   [zjuidg.name, zjuidg.site],

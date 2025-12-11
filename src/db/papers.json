@@ -1,6 +1,25 @@
 {
   "papers": [
     {
+      "documentTitle": "RCInvestigator: Towards Better Investigation of Anomaly Root Causes in Cloud Computing Systems",
+      "authorID": [
+        "shliu",
+        "yfzhou",
+        "Jue Zhang",
+        "Shandan Zhou",
+        "Weiwei Cui",
+        "Qingwei Lin",
+        "Thomas Moscibroda",
+        "Haidong Zhang",
+        "dweng",
+        "ycwu"
+      ],
+      "publicationTitle": "IEEE Pacific Visualization Symposium (TVCG Journal Paper Track)",
+      "year": 2026,
+      "teaserName": "RCInvestigator.png",
+      "preprintLink": "https://arxiv.org/abs/2405.15571"
+    },
+    {
       "documentTitle": "ViseGPT: Towards Better Alignment of LLM-generated Data Wrangling Scripts and User Prompts",
       "authorID": [
         "jjzhu",
