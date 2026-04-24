@@ -1,6 +1,28 @@
 {
   "papers": [
     {
+      "documentTitle": "Cerebra: Aligning Implicit Knowledge in Interactive SQL Authoring",
+      "authorID": [
+        "yfzhou",
+        "qmshi",
+        "zsluo",
+        "xwcai",
+        "ywhuang",
+        "dhkim",
+        "dweng",
+        "ycwu"
+      ],
+      "publicationTitle": "Proceedings of the CHI Conference on Human Factors in Computing Systems",
+      "year": 2026,
+      "teaserName": "Cerebra.jpg",
+      "pubLink": {
+        "type": "ACM",
+        "link": "https://dl.acm.org/doi/10.1145/3772318.3790974"
+      },
+      "preprintLink": "https://arxiv.org/abs/2603.21363",
+      "codeLink": "https://github.com/zjuidg/CHI26-Cerebra"
+    },
+    {
       "documentTitle": "RCInvestigator: Towards Better Investigation of Anomaly Root Causes in Cloud Computing Systems",
       "authorID": [
         "shliu",
@@ -45,7 +67,7 @@
       "authorID": [
         "yfzhou",
         "xwcai",
-        "Qiming Shi",
+        "qmshi",
         "ywhuang",
         "htli",
         "hmqu",

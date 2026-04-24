@@ -40,7 +40,7 @@ export default class Greet extends Component {
           <span className="postcard-secondline">CS PhD Student @ Zhejiang University</span>
         </div>
         <div className="postcard-text">
-          <span className="postcard-thirdline">Data Visualization | Human-Computer Interaction | Data Wrangling</span>
+          <span className="postcard-thirdline">Natural Language Processing | Human-Computer Interaction | Data Intelligence</span>
         </div>
         <div className="intro-contact-bar">
           <img src="/icons/mail.svg" className="intro-contact-icon"

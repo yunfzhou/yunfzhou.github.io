@@ -1,5 +1,9 @@
 {
   "people": {
+    "dhkim": {
+      "site": "https://dhkim16.github.io/",
+      "name": "Dae Hyun Kim"
+    },
     "dweng": {
       "site": "https://dwe.ng/",
       "name": "Di Weng"
@@ -15,6 +19,10 @@
     "jjzhu": {
       "site": "https://jiajunzhuchris.github.io/",
       "name": "Jiajun Zhu"
+    },
+    "qmshi": {
+      "site": "https://scholar.google.com/citations?user=6gONLJ4AAAAJ&hl=en",
+      "name": "Qiming Shi"
     },
     "rchen": {
       "site": "https://crcrcry.notion.site/",
