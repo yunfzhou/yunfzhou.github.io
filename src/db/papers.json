@@ -20,7 +20,8 @@
         "link": "https://dl.acm.org/doi/10.1145/3772318.3790974"
       },
       "preprintLink": "https://arxiv.org/abs/2603.21363",
-      "codeLink": "https://github.com/zjuidg/CHI26-Cerebra"
+      "codeLink": "https://github.com/zjuidg/CHI26-Cerebra",
+      "demoLink": "https://www.youtube.com/watch?v=Kq8pTX1UbZU"
     },
     {
       "documentTitle": "RCInvestigator: Towards Better Investigation of Anomaly Root Causes in Cloud Computing Systems",
@@ -39,7 +40,12 @@
       "publicationTitle": "IEEE Pacific Visualization Symposium (TVCG Journal Paper Track)",
       "year": 2026,
       "teaserName": "RCInvestigator.png",
-      "preprintLink": "https://arxiv.org/abs/2405.15571"
+      "pubLink": {
+        "type": "IEEE",
+        "link": "https://doi.org/10.1109/TVCG.2026.3694461"
+      },
+      "preprintLink": "https://arxiv.org/abs/2405.15571",
+      "demoLink": "https://www.youtube.com/watch?v=xnZdN0d0lXY"
     },
     {
       "documentTitle": "ViseGPT: Towards Better Alignment of LLM-generated Data Wrangling Scripts and User Prompts",
