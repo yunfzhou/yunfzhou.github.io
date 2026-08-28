@@ -1,6 +1,20 @@
 {
   "papers": [
     {
+      "documentTitle": "BIRD-History: A Benchmark for History-Driven Text-to-SQL with Fine-Grained Knowledge Annotations",
+      "authorID": [
+        "yfzhou",
+        "qmshi",
+        "Yizhou Yang",
+        "dweng",
+        "ycwu"
+      ],
+      "publicationTitle": "Proceedings of the Conference on Empirical Methods in Natural Language Processing",
+      "year": 2026,
+      "teaserName": "BIRD-History.jpg",
+      "codeLink": "https://github.com/zjuidg/BIRD-History"
+    },
+    {
       "documentTitle": "Cerebra: Aligning Implicit Knowledge in Interactive SQL Authoring",
       "authorID": [
         "yfzhou",
@@ -48,25 +62,38 @@
       "demoLink": "https://www.youtube.com/watch?v=xnZdN0d0lXY"
     },
     {
-      "documentTitle": "ViseGPT: Towards Better Alignment of LLM-generated Data Wrangling Scripts and User Prompts",
+      "documentTitle": "SPADER: Step-wise Peer Advantage with Diversity-Aware Exploration Rewards for Multi-Answer Question",
       "authorID": [
-        "jjzhu",
-        "Xinyu Cheng",
-        "zsluo",
+        "qmshi",
+        "Zhaolu Kang",
         "yfzhou",
-        "xhshu",
+        "dweng",
+        "ycwu"
+      ],
+      "publicationTitle": "Proceedings of the Conference on Empirical Methods in Natural Language Processing",
+      "year": 2026,
+      "teaserName": "SPADER.png",
+      "preprintLink": "https://arxiv.org/abs/2606.00593",
+      "codeLink": "https://github.com/KhanCold/spader"
+    },
+    {
+      "documentTitle": "ChronoMantic: A Natural Language Interface for Interactive Time Series Pattern Query",
+      "authorID": [
+        "Yangtian Liu",
+        "shliu",
+        "Guobin Tu",
+        "yfzhou",
+        "xwcai",
         "dweng",
         "ycwu"
       ],
       "publicationTitle": "Proceedings of the Annual ACM Symposium on User Interface Software and Technology",
-      "year": 2025,
-      "teaserName": "ViseGPT.png",
+      "year": 2026,
+      "teaserName": "ChronoMantic.png",
       "pubLink": {
         "type": "ACM",
-        "link": "https://doi.org/10.1145/3746059.3747689"
-      },
-      "preprintLink": "https://arxiv.org/abs/2508.01279",
-      "demoLink": "https://youtu.be/53WZFvEQUPQ?si=eaN3nDJjUJ2OK1S5"
+        "link": "https://doi.org/10.1145/3830398.3830491"
+      }
     },
     {
       "documentTitle": "Xavier: Toward Better Coding Assistance in Authoring Tabular Data Wrangling Scripts",
@@ -90,6 +117,27 @@
       "preprintLink": "https://arxiv.org/abs/2503.02639",
       "codeLink": "https://github.com/CHI25-Xavier/Xavier",
       "demoLink": "https://youtu.be/KTnCHSv1heI?feature=shared"
+    },
+    {
+      "documentTitle": "ViseGPT: Towards Better Alignment of LLM-generated Data Wrangling Scripts and User Prompts",
+      "authorID": [
+        "jjzhu",
+        "Xinyu Cheng",
+        "zsluo",
+        "yfzhou",
+        "xhshu",
+        "dweng",
+        "ycwu"
+      ],
+      "publicationTitle": "Proceedings of the Annual ACM Symposium on User Interface Software and Technology",
+      "year": 2025,
+      "teaserName": "ViseGPT.png",
+      "pubLink": {
+        "type": "ACM",
+        "link": "https://doi.org/10.1145/3746059.3747689"
+      },
+      "preprintLink": "https://arxiv.org/abs/2508.01279",
+      "demoLink": "https://youtu.be/53WZFvEQUPQ?si=eaN3nDJjUJ2OK1S5"
     },
     {
       "documentTitle": "Interactive Table Synthesis with Natural Language",
